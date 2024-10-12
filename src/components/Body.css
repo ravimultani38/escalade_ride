@@ -1,0 +1,94 @@
+/* General styles */
+body {
+    background-color: #000; /* Black background */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+#headBar h1 {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 30px;
+}
+
+/* Adjust image container to fit the full width */
+.image-container {
+    top:0%;
+    position: absolute;
+    width: 100%;
+    height: auto; /* Ensure height adjusts with the content */
+   
+}
+
+/* Gradient overlay effect on the top of the image */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Adjust the height of the gradient overlay */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); /* Black to transparent gradient */
+    z-index: 5; /* Ensure overlay is above the image but below other content */
+    pointer-events: none; /* Prevent the overlay from blocking interactions */
+}
+
+.featured-image {
+    width: 100%; /* Set image width to 100% of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image fills its container */
+    position: relative;
+    z-index: 1; /* Ensure the image is below the overlay */
+}
+
+/* Form styles */
+.form {
+    position: absolute;
+    top: 50%; /* Adjust positioning to center vertically */
+    right: 5%; /* Position form on the right side of the image */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 300px;
+    z-index: 10; /* Ensure form is above the image and overlay */
+}
+
+.form .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input background */
+    border: none;
+    color: white;
+}
+
+.form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+
+.form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form-text {
+    color: white;
+}
+
+#emailHelp {
+    color: white;
+}
+
+
