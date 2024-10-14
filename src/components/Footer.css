@@ -1,0 +1,61 @@
+/* Footer styles */
+.footer {
+    background-color: #111; /* Dark background color */
+    color: white; /* Text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center align text */
+    position: relative; /* Ensure footer is not fixed */
+    width: 100%; /* Full width of the screen */
+    bottom: 0; /* Stick to the bottom if necessary */
+}
+
+.footer-links {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between links */
+    margin-bottom: 15px; /* Space below links */
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+}
+
+.footer-links a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Font size for links */
+}
+
+.footer-links a:hover {
+    color: #007bff; /* Color change on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-social {
+    margin-bottom: 15px; /* Space below social icons */
+}
+
+.footer-social a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    font-size: 20px; /* Icon size */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-social a:hover {
+    color: #007bff; /* Color change on hover */
+}
+
+.footer-copyright {
+    font-size: 14px; /* Smaller font for copyright text */
+    margin-top: 10px; /* Space above copyright text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 10px; /* Reduce space between stacked links */
+    }
+
+    .footer-social {
+        margin-bottom: 10px; /* Reduce space below social icons */
+    }
+}

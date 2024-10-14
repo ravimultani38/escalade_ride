@@ -1,0 +1,90 @@
+/* Form container styles */
+.form {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 5%; /* Position form on the right */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with some transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 300px;
+    z-index: 10; /* Ensure it's above the image */
+    overflow: hidden; /* Prevent overflow issues during slide transitions */
+}
+
+/* Styling for the form steps */
+.form .form-step {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Sliding transitions for steps */
+.step-1 .form .form-step {
+    transform: translateX(0);
+}
+
+.step-2 .form .form-step {
+    transform: translateX(-100%);
+}
+
+/* Input and control styling */
+.form .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input */
+    border: none;
+    color: white;
+    margin-bottom: 15px; /* Add margin for spacing */
+}
+
+.form .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    color: white;
+}
+
+/* Button styles */
+.form .btn-primary {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.form .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.form .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.form .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Text styling */
+.form .form-text {
+    color: white;
+}
+
+#emailHelp {
+    color: white;
+}
+
+/* Form container adjustments for smaller screens */
+@media (max-width: 768px) {
+    .form {
+        width: 90%;
+        right: 5%;
+        padding: 15px;
+    }
+}

@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './Header.css';
 function Header() {
     return (
         <>
@@ -14,7 +16,7 @@ function Header() {
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item me-5">
-                                <a className="nav-link" href="#">Link</a>
+                                <a className="nav-link" href="#">About</a>
                             </li>
                             <li className="nav-item dropdown me-5">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -28,7 +30,10 @@ function Header() {
                                 </ul>
                             </li>
                             <li className="nav-item me-5">
-                                <a className="nav-link disabled">Disabled</a>
+                                <a className="nav-link disabled">Contact Us</a>
+                            </li>
+                            <li className="nav-item me-5 book">
+                                <a className="nav-link disabled">Book Now</a>
                             </li>
                         </ul>
                     </div>

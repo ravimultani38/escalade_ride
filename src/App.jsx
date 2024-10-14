@@ -3,6 +3,7 @@ import Header from "./components/Header"
 import Body from "./components/Body"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
     <>
      <Header/>
      <Body/>
+     <Footer/>
+    
     </>
   )
 }
